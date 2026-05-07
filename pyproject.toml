@@ -1,0 +1,15 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "vfx-pipeline"
+version = "0.1.0"
+requires-python = ">=3.9"
+dependencies = ["click", "rich"]
+
+[project.scripts]
+vfx-pipe = "vfx_pipeline.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
